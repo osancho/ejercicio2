@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { ThemeContext } from '../context/ThemeContext'
+import { PlayerImage } from './PlayerImage'
 
 export const Players = ({ players }) => {
   const playersShort = players.sort((a, b) => a.player_age - b.player_age)
@@ -22,7 +23,9 @@ export const Players = ({ players }) => {
           style={{ backgroundColor: index % 2 === 0 ? isDarkMode ? '#1c1c1c' : '#f5f5f5' : isDarkMode ? '#000' : '#fff' }}
         >
 
-          <div><img src={player.player_image} alt={`Imagen de ${player.player_name}`} /></div>
+          <div>
+            <PlayerImage player={player} />
+          </div>
           <div>{player.player_name}</div>
           <div className='age'>{player.player_age}<span className='agelabel'> años</span></div>
           <div>{player.player_type}</div>
