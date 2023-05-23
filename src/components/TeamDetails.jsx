@@ -5,8 +5,6 @@ export const TeamDetails = () => {
   const location = useLocation()
   const { team } = location.state
 
-  console.log(team)
-
   return (
     <div className='teaminfo'>
       <h2>{team.team_name}</h2>

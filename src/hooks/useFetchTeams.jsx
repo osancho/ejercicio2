@@ -9,9 +9,8 @@ export const useFetchTeams = () => {
   const fetchTeams = async () => {
     try {
       const teams = await getTeams()
-      console.log(teams)
       if (teams.error) setError('No se encontraron equipos')
-      setTeams(teams)
+      else setTeams(teams)
     } catch (error) {
       setError(error)
     } finally {
