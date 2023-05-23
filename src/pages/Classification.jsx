@@ -6,13 +6,16 @@ export const Classification = () => {
 
   return (
     <>
-      {loading && <p>Loading...</p>}
-      {error && <p>{error.message}</p>}
-      <div className='teams'>
-        {teams.map((team, index) => (
-          <TeamListItem key={index} team={team} />
-        ))}
-      </div>
+      {loading && <p style={{ textAlign: 'center' }}>Loading...</p>}
+      {error
+        ? <p style={{ textAlign: 'center' }}>Ups algo fue mal</p>
+        : (
+          <div className='teams'>
+            {teams?.map((team, index) => (
+              <TeamListItem key={index} team={team} />
+            ))}
+          </div>
+          )}
     </>
   )
 }
