@@ -10,7 +10,7 @@ Sigue estos pasos para ejecutar el proyecto de manera local:
 1. Clona este repositorio en tu máquina:
 
    ```shell
-   git clone https://github.com/tu-usuario/ejercicio2.git
+   git clone https://github.com/osancho/ejercicio2.git
    ```
 2. Navega a la carpeta del proyecto
 
