@@ -79,3 +79,17 @@
   margin: 0 auto;
   display: block;
 }
+
+.darkmode {
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-size: 2em;
+}
+
+.darkmodecontainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
