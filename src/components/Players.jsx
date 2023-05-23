@@ -5,7 +5,6 @@ export const Players = ({ players }) => {
   const playersShort = players.sort((a, b) => a.player_age - b.player_age)
   const { isDarkMode } = useContext(ThemeContext)
 
-  console.log(isDarkMode)
   return (
     <div className='players'>
       <h3>Jugadores</h3>
