@@ -32,3 +32,50 @@
   color: #fff;
 }
 
+.players {
+  display: flex;
+  flex-direction: column;
+}
+
+.playerlist-head,
+.playerlist {
+  display: flex;
+  justify-content: space-between;
+}
+
+.playerlist{
+  padding: 20px 0;
+}
+
+.playerlist-head > h5,
+.playerlist > div {
+  flex: 1;
+  text-align: center;
+}
+
+.playerlist > div > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.players > h3 {
+  text-align: center;
+}
+
+.teaminfo > h2 {
+  text-align: center;
+}
+
+.teaminfo {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.teaminfo > img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+}
