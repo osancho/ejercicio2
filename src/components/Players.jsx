@@ -25,9 +25,9 @@ export const Players = ({ players }) => {
 
           <div><img src={player.player_image} alt={`Imagen de ${player.player_name}`} /></div>
           <div>{player.player_name}</div>
-          <div>{player.player_age}</div>
+          <div className='age'>{player.player_age}<span className='agelabel'> años</span></div>
           <div>{player.player_type}</div>
-          <div>{player.player_match_played}</div>
+          <div className='matchs'>{player.player_match_played}</div>
         </div>
       ))}
     </div>

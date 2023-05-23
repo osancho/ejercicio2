@@ -94,3 +94,55 @@
   justify-content: center;
   padding: 20px;
 }
+
+.agelabel {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .teams {
+    grid-template-columns: 1fr;
+  }
+
+  .teamCard {
+    padding: 10px;
+  }
+
+  .teams > img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .teaminfo {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .teaminfo > img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .playerlist-head{
+    display: none;
+  }
+
+  .playerlist {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .playerlist > div > img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .matchs{
+    display: none
+  }
+
+  .agelabel {
+    display: inline;
+  }
+}
